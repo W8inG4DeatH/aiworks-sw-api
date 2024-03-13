@@ -4,7 +4,7 @@ import { map } from 'rxjs/operators';
 
 @Injectable()
 export class GoogleCloudTranslationService {
-  private apiKey = 'AIzaSyAAPomxhcIXkab-Hv_aKGWs7RUQ_7UyhXg';
+  private apiKey = '/google-api.key';
   private apiUrl = 'https://translation.googleapis.com/language/translate/v2';
 
   constructor(private http: HttpService) {}
