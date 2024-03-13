@@ -6,6 +6,7 @@ import { ComixModule } from './comix/comix.module';
 import { ConfigModule } from '@nestjs/config';
 import { databaseConfig } from 'config/database.config';
 import { envValidationSchema } from 'config/envValidation.config';
+import { GoogleCloudTranslationModule } from './google-cloud-translation/google-cloud-translation.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { envValidationSchema } from 'config/envValidation.config';
     }),
     UserModule,
     ComixModule,
+    GoogleCloudTranslationModule,
   ],
   controllers: [AppController],
 })
